@@ -1,0 +1,26 @@
+header, footer{
+    height: 200px;
+    border: 1px solid gray;
+    clear: both;
+}
+
+.lonesome{
+    height: 300px;
+    width: 99.9%;
+    border: 1px solid gray;
+    float: left;
+}
+
+.unevenDouble1{
+    height: 350px;
+    width: 40.3%;
+    border: 1px solid gray;
+    float: left;
+}
+
+.unevenDouble2{
+    height: 350px;
+    width: 59.3%;
+    border: 1px solid gray;
+    float: left;
+}

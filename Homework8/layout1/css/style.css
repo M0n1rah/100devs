@@ -1,0 +1,77 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+header {
+  background: black;
+  color: white;
+  height: 50px;
+}
+
+nav * {
+  float: left;
+  width: 10%;
+  color: white;
+  display: block;
+}
+
+nav ul {
+  width: 50%;
+}
+
+nav form input {
+  width: 100%;
+}
+
+#bottom-news section {
+  width: 33.3333%;
+  float: left;
+}
+
+#main-headline, #side-headlines {
+  width: 50%;
+  float: left;
+}
+
+#side-headlines > section {
+  width: 50%;
+  float: left;
+  margin-top: 3px;
+  border: 1px solid black;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+
+

@@ -17,26 +17,134 @@
 	clear: both;
 }
 
-/******************************************
-/* BASE STYLES
-/*******************************************/
-
-body {
-
-}
-
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
 
+header {
+  height: 55px;
 }
 
-footer {
+header * {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  padding: 2px;
+  margin: 2px;
+}
 
+ul {
+  list-style: none;
+}
+
+main {
+  height: 25%;
+}
+
+main ul {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+}
+
+main ul li {
+  padding: 2px;
+  margin: 1px;
+}
+
+h1 {
+  margin-left: 40px;
+}
+
+#search-here {
+  margin-left: 40px;
+}
+
+form a {
+  background: orange;
+  padding: 2px;
+  border: 2px solid orange;
+  color: white;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+#about-us {
+  padding: 2px;
+  margin-left: 33%;
+}
+
+#about-us a {
+  background: orange;
+  padding: 2px;
+  border: 2px solid orange;
+  color: white;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+#order-online * {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+#order-online ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+#order-online ul li {
+  margin: 1em;
+}
+
+.image-gallery {
+  height: 50px;
+}
+
+.image-gallery * {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+#book-table {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+#testimonials {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+#book-table #when-open {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+#testimonials .star-rating {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.star-rating ul li {
+  margin: 1.5em;
 }
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+@media (max-width: 480px) {
+  body {
+    width: 100%;
+  }
+}

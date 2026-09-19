@@ -17,26 +17,101 @@
 	clear: both;
 }
 
-/******************************************
-/* BASE STYLES
-/*******************************************/
-
-body {
-
+ul {
+  list-style: none;
 }
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
 
+header {
+  height: 55px;
+  background: #66768a;
+  margin: 0;
+  border: 1px solid #66768a;
+  color: white;
+}
+
+header nav ul li {
+  float: left;
+  width: 5%;
+}
+
+header nav img {
+  float: left;
+  width: 10%;
+  margin-left: 25%;
+}
+
+header nav button {
+  float: right;
+  width: 10%;
+}
+
+main {
+  padding-top: 1%;
+  background: #66768a;
+  border: 1px solid #66768a;
+  color: white;
+}
+
+main * {
+  margin-left: 5%;
+}
+
+#why {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+#why * {
+  padding: 1%;
+}
+
+#why p {
+  margin: 0 10%;
+}
+
+#visit-us {
+  background: #dbdfe2;
+}
+
+#visit-us section {
+  float: left;
+  width: 50%;
+  background: #dbdfe2;
+}
+
+#volunteer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  height: 30%;
+  padding: 5%;
 }
 
 footer {
-
+  background: #161f2a;
+  color: white;
+  border: 1px solid #161f2a;
+  height: 30%;
 }
+
+footer #socials, #address {
+  float: left;
+  width: 50%;
+}
+
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+@media (max-width: 400px) {
+  body {
+    width: 100%;
+  }
+}

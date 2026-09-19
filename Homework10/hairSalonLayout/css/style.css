@@ -17,26 +17,101 @@
 	clear: both;
 }
 
-/******************************************
-/* BASE STYLES
-/*******************************************/
-
-body {
-
+ul {
+  list-style: none;
 }
-
 
 /******************************************
 /* LAYOUT
 /*******************************************/
+
 header {
-
+  width: 100%;
+  height: 55px;
 }
 
-footer {
-
+header nav {
+  display: flow-root;
+  padding: 20px;
+  align-items: center;
 }
 
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
+header nav img {
+  float: left;
+  height: 40px;
+}
+
+header nav ul {
+  float: left;
+  margin: 0;
+  padding: 0;
+  margin-left: 50px;
+}
+
+header nav ul li {
+  float: left;
+  margin: 10px;
+}
+
+header nav > a {
+  float: right;
+  padding: 10px 20px;
+}
+
+main {
+  margin-left: 15%;
+}
+
+#first-visit {
+  height: 13em;
+  width: 10em;
+  background: black;
+  border: 1px solid black;
+  color: white;
+}
+
+#features {
+  width: 100%;
+  height: 150px;
+}
+
+#features ul li {
+  float: left;
+  width: 33.33%;
+}
+
+#momentum {
+  width: 100%;
+  height: 200px;
+}
+
+#momentum section {
+  float: left;
+  width: 50%;
+}
+
+#stylists {
+  width: 100%;
+  height: 150px;
+}
+
+#stylists ul li {
+  float: left;
+  width: 33.33%;
+}
+
+#copoun {
+  width: 100%;
+  height: 150px;
+}
+
+#lookbook {
+  width: 100%;
+  height: 150px;
+}
+
+@media (max-width: 400px) {
+  body {
+    width: 100%;
+  }
+}
